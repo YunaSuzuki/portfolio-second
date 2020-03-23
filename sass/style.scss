@@ -98,15 +98,16 @@ ul{
 
 .title{
   text-align: center;
-  @include fontsize(24);
   @include title-font;
   
   @media #{$sp-size}{
     margin: 32px 0;
+    @include fontsize(24);
   }
   
   @media #{$more-than-tb}{
     margin: 56px 0;
+    @include fontsize(32);
   }
 }
 
@@ -153,19 +154,28 @@ ul{
 }
 
 //skill
+.skill-box{
+  @media #{$skillbox-flex}{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .skill__block{
   text-align: center;
   @include box-shadow(1px 3px 6px 1px #E3E3E3);
   @include border-radius(5px);
   font-family: $contents-font;
   
-  @media #{$sp-size}{
+  @media #{$skillbox-block}{
     width: 100%;
-    margin-bottom: 32px;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto 32px;
     padding: 32px 16px;
   }
   
-  @media #{$more-than-tb}{
+  @media #{$skillbox-flex}{
     width: 31%;
     padding: 32px 16px 56px;
   }
@@ -200,13 +210,6 @@ ul{
     }
   }
   
-}
-
-.skill-box{
-  @media #{$more-than-tb}{
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 //works

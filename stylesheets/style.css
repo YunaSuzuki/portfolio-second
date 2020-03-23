@@ -44,8 +44,9 @@ ul {
         padding: 16px 40px; } }
   .header h1 {
     margin: 0;
-    font-family: 'Impact','Arial Rounded MT Bold',sans-serif;
-    letter-spacing: 1.5px; }
+    font-family: 'Times New Roman','Times','Baskerville',sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold; }
     @media (max-width: 560px) {
       .header h1 {
         font-size: 24px;
@@ -77,16 +78,19 @@ ul {
 
 .title {
   text-align: center;
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-family: 'Impact','Arial Rounded MT Bold',sans-serif;
-  letter-spacing: 1.5px; }
+  font-family: 'Times New Roman','Times','Baskerville',sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: bold; }
   @media (max-width: 560px) {
     .title {
-      margin: 32px 0; } }
+      margin: 32px 0;
+      font-size: 24px;
+      font-size: 1.5rem; } }
   @media (min-width: 561px) {
     .title {
-      margin: 56px 0; } }
+      margin: 56px 0;
+      font-size: 32px;
+      font-size: 2rem; } }
 
 @media (min-width: 561px) {
   .profile .flex-box {
@@ -113,6 +117,11 @@ ul {
 .profile__contents {
   font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif; }
 
+@media (min-width: 800px) {
+  .skill-box {
+    display: flex;
+    justify-content: space-between; } }
+
 .skill__block {
   text-align: center;
   -moz-box-shadow: 1px 3px 6px 1px #E3E3E3;
@@ -122,12 +131,14 @@ ul {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif; }
-  @media (max-width: 560px) {
+  @media (max-width: 799px) {
     .skill__block {
       width: 100%;
-      margin-bottom: 32px;
+      max-width: 400px;
+      height: 300px;
+      margin: 0 auto 32px;
       padding: 32px 16px; } }
-  @media (min-width: 561px) {
+  @media (min-width: 800px) {
     .skill__block {
       width: 31%;
       padding: 32px 16px 56px; } }
@@ -151,11 +162,6 @@ ul {
       display: flex;
       justify-content: space-between;
       margin: 8px 0; }
-
-@media (min-width: 561px) {
-  .skill-box {
-    display: flex;
-    justify-content: space-between; } }
 
 @media (min-width: 561px) {
   .works {

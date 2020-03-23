@@ -1,0 +1,52 @@
+@import 'compass';
+@import 'modules/variables.scss';
+@import 'modules/mixin.scss';
+
+//header
+.header{
+  position: relative;
+  background-image: url('../images/header-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+  @media #{$less-than-tb}{
+    height: 320px;
+  }
+  
+  @media #{$more-than-tb}{
+    height: 400px;
+  }
+  
+  &__bg{
+    position: absolute;
+    height: 10%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 16px 40px;
+    background-color: #fff;
+    @include opacity(.7);
+    
+    @media #{$less-than-tb}{
+      width: 60%;
+    }
+    
+    @media #{$more-than-tb}{
+      width: 40%;
+    }
+  }
+  
+  h1{
+    margin: 0;
+    @include title-font;
+    
+    @media #{$less-than-tb}{
+      @include fontsize(24);
+    }
+  }
+  
+}

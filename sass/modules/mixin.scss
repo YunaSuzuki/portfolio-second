@@ -1,0 +1,9 @@
+@mixin fontsize($size: 24) {
+  font-size: $size + px;
+  font-size: ($size / 16) * 1rem;
+}
+
+@mixin title-font{
+  font-family: 'Impact','Arial Rounded MT Bold',sans-serif;
+  letter-spacing: 1.5px;
+}

@@ -2,16 +2,27 @@
 @import 'modules/variables.scss';
 @import 'modules/mixin.scss';
 
+*{
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
 //header
 .header{
   position: relative;
   background-image: url('../images/header-image.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include bg-config;
   text-align: center;
   
-  @media #{$less-than-tb}{
+  @media #{$sp-size}{
     height: 320px;
   }
   
@@ -21,7 +32,7 @@
   
   &__bg{
     position: absolute;
-    height: 10%;
+    height: 60px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -31,12 +42,14 @@
     background-color: #fff;
     @include opacity(.7);
     
-    @media #{$less-than-tb}{
+    @media #{$sp-size}{
       width: 60%;
+      padding: 16px 0;
     }
     
     @media #{$more-than-tb}{
       width: 40%;
+      padding: 16px 40px;
     }
   }
   
@@ -44,9 +57,281 @@
     margin: 0;
     @include title-font;
     
-    @media #{$less-than-tb}{
+    @media #{$sp-size}{
       @include fontsize(24);
+      line-height: 24px;
+    }
+    
+    @media #{$more-than-tb}{
+      @include fontsize(32);
+      line-height: 32px;
     }
   }
   
+}
+
+//main
+.container{
+  width: 100%;
+  max-width: 1024px;
+  
+  @media #{$sp-size}{
+    padding: 16px;
+  }
+  
+  @media #{$more-than-tb}{
+    padding: 32px 56px 0;
+    margin: auto;
+  }
+
+}
+
+.section{
+  @media #{$sp-size}{
+    margin-bottom: 100px;
+  }
+  
+  @media #{$more-than-tb}{
+    margin-bottom: 160px;
+  }
+}
+
+.title{
+  text-align: center;
+  @include fontsize(24);
+  @include title-font;
+  
+  @media #{$sp-size}{
+    margin: 32px 0;
+  }
+  
+  @media #{$more-than-tb}{
+    margin: 56px 0;
+  }
+}
+
+.profile{
+  
+  @media #{$more-than-tb}{
+    .flex-box{
+      display: flex;
+      justify-content: center;
+      
+      &__right{
+        width: 50%;
+        
+      }
+      
+      .profile__contents__text{
+        display: inline-block;
+        vertical-align: middle;
+         
+      }
+    }
+  }
+  
+  
+  &__image{
+    background-image: url('../images/profile_img.jpg');
+    @include bg-config;
+    width: 200px;
+    height: 200px;
+    @include border-radius(100px);
+    
+    @media #{$sp-size}{
+      margin: auto;
+    }
+    
+    @media #{$more-than-tb}{
+      
+    }
+  }
+  
+  &__contents{
+    font-family: $contents-font;
+  }
+}
+
+//skill
+.skill__block{
+  text-align: center;
+  @include box-shadow(1px 3px 6px 1px #E3E3E3);
+  @include border-radius(5px);
+  font-family: $contents-font;
+  
+  @media #{$sp-size}{
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 32px 16px;
+  }
+  
+  @media #{$more-than-tb}{
+    width: 31%;
+    padding: 32px 16px 56px;
+  }
+  
+  &__icon{
+    @include fontsize(40);
+  }
+  
+  &__subtitle{
+    margin: 16px 0;
+    @include fontsize(18);
+  }
+  
+  &__detail-box{
+    margin-top: 24px;
+    text-align: left;
+    
+    &__text{
+      display: block;
+      margin: 8px 0;
+      
+      &__icon{
+        display: inline-block;
+        text-align: right;
+      }
+    }
+    
+    &__row{
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+  }
+  
+}
+
+.skill-box{
+  @media #{$more-than-tb}{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//works
+.works{
+  @media #{$more-than-tb}{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.works__block{
+  margin-bottom: 56px;
+  
+  @media #{$sp-size}{
+    width: 60%;
+    margin: auto;
+  }
+
+  @media #{$more-than-tb}{
+    width: 30%;
+  }
+  
+  &__image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+    margin-bottom: 24px;
+  }
+  
+  #corporate-site__bg{
+    background-image: url('../images/corporate-site.png');
+  }
+  
+  #smacam__bg{
+    background-image: url('../images/smacam.png');
+  }
+  
+  #weblog__bg{
+    background-image: url('../images/weblog.png');
+  }
+  
+  #animal__bg{
+    border: 1px solid #eee;
+    background-image: url('../images/animal-app.png');
+  }
+  
+  &__text-box{
+    font-family: $contents-font;
+    text-align: center;
+    
+    &__upper{
+      margin-bottom: 8px;
+    }
+    
+    &__lower{
+      @include fontsize(12);
+    }
+  }
+}
+
+//contact
+.icon-box{
+  display: flex;
+  margin: auto;
+  
+  @media #{$sp-size}{
+    width: 70%;
+    
+    justify-content: space-between;
+  }
+  
+  @media #{$more-than-tb}{
+    width: 50%;
+    justify-content: space-around;
+  }
+  
+  li{
+    display: block;
+    text-align: center;
+    @include box-shadow(1px 3px 6px 1px #E3E3E3);
+    
+    @media #{$sp-size}{
+      width: 70px;
+      height: 70px;
+      padding: 15px;
+      @include border-radius(35px);
+      
+      img{
+        width: 40px;
+      }
+    }
+    
+    @media #{$more-than-tb}{
+      width: 90px;
+      height: 90px;
+      padding: 20px;
+      @include border-radius(45px);
+      img{
+        width: 50px;
+      }
+    }
+    
+    #twitter_icon, #mai_icon{
+      padding-top: 5px;
+    }
+  }
+}
+
+//footer
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: #F5F5F5;
+  text-align: center;
+  
+  &__text{
+    line-height: 100px;
+    
+    @media #{$sp-size}{
+      @include fontsize(12);
+    }
+    
+    @media #{$more-than-tb}{
+      @include fontsize(14);
+    }
+  }
 }

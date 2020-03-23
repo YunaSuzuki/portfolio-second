@@ -7,3 +7,9 @@
   font-family: 'Impact','Arial Rounded MT Bold',sans-serif;
   letter-spacing: 1.5px;
 }
+
+@mixin bg-config{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

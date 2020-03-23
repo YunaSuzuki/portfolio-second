@@ -1,3 +1,9 @@
 //device
-$less-than-tb: '(max-width: 720px)';
-$more-than-tb: '(min-width: 721px)';
+$sp-size: '(max-width: 560px)';
+$tb-size: '(min-width: 561px) and (max-width: 1024px)';
+$pc-size: '(min-width: 1025px)';
+
+$more-than-tb: '(min-width: 561px)';
+$less-than-tb: '(max-width: 1024px)';
+
+$contents-font: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;

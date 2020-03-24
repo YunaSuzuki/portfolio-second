@@ -94,20 +94,20 @@ ul{
   @media #{$more-than-tb}{
     margin-bottom: 160px;
   }
-}
-
-.title{
-  text-align: center;
-  @include title-font;
   
-  @media #{$sp-size}{
-    margin: 32px 0;
-    @include fontsize(24);
-  }
-  
-  @media #{$more-than-tb}{
-    margin: 56px 0;
-    @include fontsize(32);
+  &__title{
+    text-align: center;
+    @include title-font;
+    
+    @media #{$sp-size}{
+      margin: 32px 0;
+      @include fontsize(24);
+    }
+    
+    @media #{$more-than-tb}{
+      margin: 56px 0;
+      @include fontsize(32);
+    }
   }
 }
 
@@ -120,19 +120,12 @@ ul{
       
       &__right{
         width: 50%;
-        
-      }
-      
-      .profile__contents__text{
-        display: inline-block;
-        vertical-align: middle;
-         
       }
     }
   }
   
   
-  &__image{
+  &__imagebox{
     background-image: url('../images/profile_img.jpg');
     @include bg-config;
     width: 200px;
@@ -144,17 +137,21 @@ ul{
     }
     
     @media #{$more-than-tb}{
-      
+      margin-right: 32px;
     }
   }
   
-  &__contents{
+  &__textbox{
     font-family: $contents-font;
+    
+    &__row{
+      line-height: 25px;
+    }
   }
 }
 
 //skill
-.skill-box{
+.skill-wrapper{
   @media #{$skillbox-flex}{
     display: flex;
     justify-content: space-between;
@@ -180,40 +177,34 @@ ul{
     padding: 32px 16px 56px;
   }
   
-  &__icon{
+  &__topicon{
     @include fontsize(40);
   }
   
-  &__subtitle{
+  &__title{
     margin: 16px 0;
     @include fontsize(18);
   }
   
-  &__detail-box{
+  &__lists{
     margin-top: 24px;
     text-align: left;
     
-    &__text{
-      display: block;
-      margin: 8px 0;
-      
-      &__icon{
-        display: inline-block;
-        text-align: right;
-      }
-    }
-    
     &__row{
       display: flex;
-      justify-content: space-between;
-      margin: 8px 0;
+      margin-bottom: 8px;
+      
+      span{
+        display: block;
+        width: 49%;
+      }
     }
   }
   
 }
 
 //works
-.works{
+.works-wrapper{
   @media #{$more-than-tb}{
     display: flex;
     justify-content: space-between;
@@ -257,7 +248,7 @@ ul{
     background-image: url('../images/animal-app.png');
   }
   
-  &__text-box{
+  &__textbox{
     font-family: $contents-font;
     text-align: center;
     
@@ -272,7 +263,7 @@ ul{
 }
 
 //contact
-.icon-box{
+.iconbox{
   display: flex;
   margin: auto;
   
@@ -287,7 +278,7 @@ ul{
     justify-content: space-around;
   }
   
-  li{
+  .icon-bg{
     display: block;
     text-align: center;
     @include box-shadow(1px 3px 6px 1px #E3E3E3);

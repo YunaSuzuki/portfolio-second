@@ -75,19 +75,18 @@ ul {
 @media (min-width: 561px) {
   .section {
     margin-bottom: 160px; } }
-
-.title {
+.section__title {
   text-align: center;
   font-family: 'Times New Roman','Times','Baskerville',sans-serif;
   letter-spacing: 1.5px;
   font-weight: bold; }
   @media (max-width: 560px) {
-    .title {
+    .section__title {
       margin: 32px 0;
       font-size: 24px;
       font-size: 1.5rem; } }
   @media (min-width: 561px) {
-    .title {
+    .section__title {
       margin: 56px 0;
       font-size: 32px;
       font-size: 2rem; } }
@@ -97,11 +96,8 @@ ul {
     display: flex;
     justify-content: center; }
     .profile .flex-box__right {
-      width: 50%; }
-    .profile .flex-box .profile__contents__text {
-      display: inline-block;
-      vertical-align: middle; } }
-.profile__image {
+      width: 50%; } }
+.profile__imagebox {
   background-image: url("../images/profile_img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,13 +108,18 @@ ul {
   -webkit-border-radius: 100px;
   border-radius: 100px; }
   @media (max-width: 560px) {
-    .profile__image {
+    .profile__imagebox {
       margin: auto; } }
-.profile__contents {
+  @media (min-width: 561px) {
+    .profile__imagebox {
+      margin-right: 32px; } }
+.profile__textbox {
   font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif; }
+  .profile__textbox__row {
+    line-height: 25px; }
 
 @media (min-width: 800px) {
-  .skill-box {
+  .skill-wrapper {
     display: flex;
     justify-content: space-between; } }
 
@@ -142,29 +143,25 @@ ul {
     .skill__block {
       width: 31%;
       padding: 32px 16px 56px; } }
-  .skill__block__icon {
+  .skill__block__topicon {
     font-size: 40px;
     font-size: 2.5rem; }
-  .skill__block__subtitle {
+  .skill__block__title {
     margin: 16px 0;
     font-size: 18px;
     font-size: 1.125rem; }
-  .skill__block__detail-box {
+  .skill__block__lists {
     margin-top: 24px;
     text-align: left; }
-    .skill__block__detail-box__text {
-      display: block;
-      margin: 8px 0; }
-      .skill__block__detail-box__text__icon {
-        display: inline-block;
-        text-align: right; }
-    .skill__block__detail-box__row {
+    .skill__block__lists__row {
       display: flex;
-      justify-content: space-between;
-      margin: 8px 0; }
+      margin-bottom: 8px; }
+      .skill__block__lists__row span {
+        display: block;
+        width: 49%; }
 
 @media (min-width: 561px) {
-  .works {
+  .works-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; } }
@@ -193,53 +190,53 @@ ul {
   .works__block #animal__bg {
     border: 1px solid #eee;
     background-image: url("../images/animal-app.png"); }
-  .works__block__text-box {
+  .works__block__textbox {
     font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
     text-align: center; }
-    .works__block__text-box__upper {
+    .works__block__textbox__upper {
       margin-bottom: 8px; }
-    .works__block__text-box__lower {
+    .works__block__textbox__lower {
       font-size: 12px;
       font-size: 0.75rem; }
 
-.icon-box {
+.iconbox {
   display: flex;
   margin: auto; }
   @media (max-width: 560px) {
-    .icon-box {
+    .iconbox {
       width: 70%;
       justify-content: space-between; } }
   @media (min-width: 561px) {
-    .icon-box {
+    .iconbox {
       width: 50%;
       justify-content: space-around; } }
-  .icon-box li {
+  .iconbox .icon-bg {
     display: block;
     text-align: center;
     -moz-box-shadow: 1px 3px 6px 1px #E3E3E3;
     -webkit-box-shadow: 1px 3px 6px 1px #E3E3E3;
     box-shadow: 1px 3px 6px 1px #E3E3E3; }
     @media (max-width: 560px) {
-      .icon-box li {
+      .iconbox .icon-bg {
         width: 70px;
         height: 70px;
         padding: 15px;
         -moz-border-radius: 35px;
         -webkit-border-radius: 35px;
         border-radius: 35px; }
-        .icon-box li img {
+        .iconbox .icon-bg img {
           width: 40px; } }
     @media (min-width: 561px) {
-      .icon-box li {
+      .iconbox .icon-bg {
         width: 90px;
         height: 90px;
         padding: 20px;
         -moz-border-radius: 45px;
         -webkit-border-radius: 45px;
         border-radius: 45px; }
-        .icon-box li img {
+        .iconbox .icon-bg img {
           width: 50px; } }
-    .icon-box li #twitter_icon, .icon-box li #mai_icon {
+    .iconbox .icon-bg #twitter_icon, .iconbox .icon-bg #mai_icon {
       padding-top: 5px; }
 
 .footer {

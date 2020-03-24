@@ -17,127 +17,132 @@
     </header>
     <main class="container">
       <section class="section profile">
-        <p class="title">Profile</p>
+        <p class="section__title">Profile</p>
         <div class="flex-box">
-          <div class="profile__image flex-box__left"></div>
-          <div class="profile__contents flex-box__right">
-            <div class="profile__contents__text">
-              ここにテキストが入ります。ここにテキストが入ります。
-              ここにテキストが入ります。ここにテキストが入ります。
-              ここにテキストが入ります。ここにテキストが入ります。
-            </div>
+          <div class="profile__imagebox flex-box__left"></div>
+          <div class="profile__textbox flex-box__right">
+            <p class="profile__textbox__row">東京都在住、25歳。</p>
+            <p class="profile__textbox__row">WEBデザイナー、エンジニア目指しています。</p>
+            <p class="profile__textbox__row">『勇往邁進』がモットー。</p>
+            <p class="profile__textbox__row">オンラインスクールにて、プログラミング・デザインを学び、
+            その奥深さに魅せられ、どんどん夢中に。</p>
+            <p class="profile__textbox__row">
+              もともと、教えることが大好きなので
+              プログラミング × 教育にも携わっていきたいと
+              考えています。(初心者向けブログ更新中)
+            </p>
           </div>
         </div>
       </section>
       <section class="section skill">
-        <p class="title">Skill</p>
-        <div class="skill-box">
-          <div class="section__block skill__block">
-            <i class="fas fa-code skill__block__icon"></i>
-            <p class="skill__block__subtitle">WEBサイト制作</p>
-            <div class="skill__block__detail-box">
-              <span class="skill__block__detail-box__text">
+        <p class="section__title">Skill</p>
+        <div class="skill-wrapper">
+          <div class="skill__block">
+            <i class="fas fa-code skill__block__topicon"></i>
+            <p class="skill__block__title">WEBサイト制作</p>
+            <div class="skill__block__lists">
+              <span class="skill__block__lists__row">
                 HTML / CSS / jQuery
               </span>
-              <span class="skill__block__detail-box__text">
+              <span class="skill__block__lists__row">
                 Bootstrap
               </span>
-              <span class="skill__block__detail-box__text">
+              <span class="skill__block__lists__row">
                 レスポンシブ対応
               </span>
-              <span class="skill__block__detail-box__text">
+              <span class="skill__block__lists__row">
                 Sass / Compass
               </span>
             </div>
           </div>
-          <div class="section__block skill__block">
-            <i class="fas fa-laptop-code skill__block__icon"></i>
-            <p class="skill__block__subtitle">WEBアプリケーション制作</p>
-            <div class="skill__block__detail-box">
-              <span class="skill__block__detail-box__text">
+          <div class="skill__block">
+            <i class="fas fa-laptop-code skill__block__topicon"></i>
+            <p class="skill__block__title">WEBアプリケーション制作</p>
+            <div class="skill__block__lists">
+              <span class="skill__block__lists__row">
                 Ruby on Rails
               </span>
-              <span class="skill__block__detail-box__text">
+              <span class="skill__block__lists__row">
                 twitterなどの投稿・写真共有アプリ
               </span>
             </div>
           </div>
-          <div class="section__block skill__block">
-            <i class="fas fa-globe-europe skill__block__icon"></i>
-            <p class="skill__block__subtitle">外国語</p>
-            <div class="skill__block__detail-box">
-              <div class="skill__block__detail-box__row">
+          <div class="skill__block">
+            <i class="fas fa-globe-europe skill__block__topicon"></i>
+            <p class="skill__block__title">外国語</p>
+            <ul class="skill__block__lists">
+              <li class="skill__block__lists__row">
                 <span>English</span>
-                <span class="skill__block__detail-box__row__icons">
+                <span class="skill__block__lists__row__stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
-              </div>
-              <div class="skill__block__detail-box__row">
+              </li>
+              <li class="skill__block__lists__row">
                 <span>Spanish</span>
-                <span class="skill__block__detail-box__row__icons">
+                <span class="skill__block__lists__row__stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
-              </div>
-              <div class="skill__block__detail-box__row">
+              </li>
+              <li class="skill__block__lists__row">
                 <span>Chinese</span>
-                <span class="skill__block__detail-box__row__icons">
+                <span class="skill__block__lists__row__stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="section">
-        <p class="title">Works</p>
-        <div class="works">
+      <section class="section works">
+        <p class="section__title">Works</p>
+        <div class="works-wrapper">
           <div class="works__block">
             <div class="works__block__image" id="corporate-site__bg"></div>
-            <div class="works__block__text-box">
-              <p class="works__block__text-box__upper">架空コーポレートサイト</p>
-              <p class="works__block__text-box__lower">コンテンツ編集中</p>
+            <div class="works__block__textbox">
+              <p class="works__block__textbox__upper">架空コーポレートサイト</p>
+              <p class="works__block__textbox__lower">コンテンツ編集中</p>
             </div>
           </div>
           <div class="works__block">
             <div class="works__block__image" id="smacam__bg"></div>
-            <div class="works__block__text-box">
-              <p class="works__block__text-box__upper">WEBサービスLP</p>
+            <div class="works__block__textbox">
+              <p class="works__block__textbox__upper">WEBサービスLP</p>
             </div>
           </div>
           <div class="works__block">
             <div class="works__block__image" id="weblog__bg"></div>
-            <div class="works__block__text-box">
-              <p class="works__block__text-box__upper">ブログサイト</p>
-              <p class="works__block__text-box__lower">コンテンツ更新中</p>
+            <div class="works__block__textbox">
+              <p class="works__block__textbox__upper">ブログサイト</p>
+              <p class="works__block__textbox__lower">コンテンツ更新中</p>
             </div>
           </div>
           <div class="works__block">
             <div class="works__block__image" id="animal__bg"></div>
-            <div class="works__block__text-box">
-              <p class="works__block__text-box__upper">WEBアプリLP</p>
-              <p class="works__block__text-box__lower">コンテンツ更新中</p>
+            <div class="works__block__textbox">
+              <p class="works__block__textbox__upper">WEBアプリLP</p>
+              <p class="works__block__textbox__lower">コンテンツ更新中</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="section">
-        <p class="title">Contact</p>
-        <ul class="icon-box">
-          <li><img src="images/twitter.png" id="twitter_icon"></li>
-          <li><img src="images/instagram.png"></li>
-          <li><img src="images/mail.png" id="mai_icon"></li>
+      <section class="section contact">
+        <p class="section__title">Contact</p>
+        <ul class="iconbox">
+          <li class="icon-bg"><img src="images/twitter.png" id="twitter_icon"></li>
+          <li class="icon-bg"><img src="images/instagram.png"></li>
+          <li class="icon-bg"><img src="images/mail.png" id="mai_icon"></li>
         </ul>
       </section>
     </main>

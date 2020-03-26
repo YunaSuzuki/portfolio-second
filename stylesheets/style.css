@@ -127,7 +127,7 @@ ul {
   position: absolute;
   top: 0;
   right: 0;
-  color: #948C76; }
+  color: #c4c4c4; }
   @media (max-width: 560px) {
     .question-icon {
       font-size: 24px;
@@ -292,7 +292,9 @@ ul {
   background-color: #F9F8F5;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-size: 14px;
+  font-size: 0.875rem; }
   .question-box li {
     display: flex; }
     .question-box li span {

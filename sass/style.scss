@@ -160,7 +160,7 @@ ul{
   position: absolute;
   top: 0;
   right: 0;
-  color: #948C76;
+  color: #c4c4c4;
   
   @media #{$sp-size}{
     @include fontsize(24);
@@ -369,6 +369,7 @@ ul{
   color: #948C76;
   background-color: #F9F8F5;
   @include border-radius(5px);
+  @include fontsize(14);
   
   li{
     display: flex;

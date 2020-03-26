@@ -160,7 +160,7 @@ ul{
   position: absolute;
   top: 0;
   right: 0;
-  color: #777;
+  color: #948C76;
   
   @media #{$sp-size}{
     @include fontsize(24);
@@ -358,3 +358,26 @@ ul{
     }
   }
 }
+
+.question-box{
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  padding: 32px 24px;
+  line-height: 25px;
+  color: #948C76;
+  background-color: #F9F8F5;
+  @include border-radius(5px);
+  
+  li{
+    display: flex;
+    
+    span{
+      display: block;
+      width: 50%;
+    }
+  }
+}
+
+

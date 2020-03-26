@@ -18,7 +18,7 @@ ul{
 //header
 .header{
   position: relative;
-  background-image: url('../images/header-image.jpg');
+  background-image: url('../images/header-image2.jpg');
   @include bg-config;
   text-align: center;
   
@@ -87,6 +87,7 @@ ul{
 }
 
 .section{
+  position: relative;
   @media #{$sp-size}{
     margin-bottom: 100px;
   }
@@ -133,7 +134,7 @@ ul{
     @include border-radius(100px);
     
     @media #{$sp-size}{
-      margin: auto;
+      margin: 0 auto 24px;
     }
     
     @media #{$more-than-tb}{
@@ -147,10 +148,29 @@ ul{
     &__row{
       line-height: 25px;
     }
+    
+    @media #{$sp-size}{
+      text-align: center;
+    }
   }
 }
 
 //skill
+.question-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #777;
+  
+  @media #{$sp-size}{
+    @include fontsize(24);
+  }
+  
+  @media #{$more-than-tb}{
+    @include fontsize(30);
+  }
+}
+
 .skill-wrapper{
   @media #{$skillbox-flex}{
     display: flex;
@@ -224,11 +244,20 @@ ul{
   }
   
   &__image{
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     height: 350px;
     margin-bottom: 24px;
+    
+    .site-link{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
   
   #corporate-site__bg{

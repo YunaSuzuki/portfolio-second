@@ -9,6 +9,17 @@ ul {
   list-style: none;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: #515151; }
+
+.marker {
+  background: linear-gradient(rgba(0, 0, 0, 0) 60%, #c1e0ff 60%);
+  font-weight: bold; }
+
+.link-hover:hover {
+  text-decoration: underline; }
+
 .header {
   position: relative;
   background-image: url("../images/header-image2.jpg");
@@ -116,6 +127,7 @@ ul {
     .profile__imagebox {
       margin-right: 32px; } }
 .profile__textbox {
+  color: #515151;
   font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif; }
   .profile__textbox__row {
     line-height: 25px; }
@@ -144,6 +156,7 @@ ul {
 
 .skill__block {
   text-align: center;
+  color: #515151;
   -moz-box-shadow: 1px 3px 6px 1px #E3E3E3;
   -webkit-box-shadow: 1px 3px 6px 1px #E3E3E3;
   box-shadow: 1px 3px 6px 1px #E3E3E3;
@@ -185,45 +198,45 @@ ul {
     justify-content: space-between;
     flex-wrap: wrap; } }
 
-.works__block {
-  margin-bottom: 56px; }
-  @media (max-width: 560px) {
-    .works__block {
-      width: 60%;
-      margin: auto; } }
-  @media (min-width: 561px) {
-    .works__block {
-      width: 30%; } }
-  .works__block__image {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    height: 350px;
-    margin-bottom: 24px; }
-    .works__block__image .site-link {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-  .works__block #corporate-site__bg {
-    background-image: url("../images/corporate-site.png"); }
-  .works__block #smacam__bg {
-    background-image: url("../images/smacam.png"); }
-  .works__block #weblog__bg {
-    background-image: url("../images/weblog.png"); }
-  .works__block #animal__bg {
-    border: 1px solid #eee;
-    background-image: url("../images/animal-app.png"); }
-  .works__block__textbox {
-    font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
-    text-align: center; }
-    .works__block__textbox__upper {
-      margin-bottom: 8px; }
-    .works__block__textbox__lower {
-      font-size: 12px;
-      font-size: 0.75rem; }
+@media (max-width: 560px) {
+  .works__block {
+    width: 60%;
+    margin: 40px auto; } }
+@media (min-width: 561px) {
+  .works__block {
+    width: 30%;
+    margin-bottom: 56px; } }
+.works__block__image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 350px;
+  margin-bottom: 24px; }
+  .works__block__image .site-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+.works__block #corporate-site__bg {
+  background-image: url("../images/corporate-site.png"); }
+.works__block #smacam__bg {
+  background-image: url("../images/smacam.png"); }
+.works__block #weblog__bg {
+  background-image: url("../images/weblog.png"); }
+.works__block #animal__bg {
+  border: 1px solid #eee;
+  background-image: url("../images/animal-app.png"); }
+.works__block__textbox {
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
+  text-align: center;
+  color: #515151; }
+  .works__block__textbox__upper {
+    margin-bottom: 8px; }
+  .works__block__textbox__lower {
+    font-size: 12px;
+    font-size: 0.75rem; }
 
 .iconbox {
   display: flex;
@@ -264,6 +277,28 @@ ul {
           width: 50px; } }
     .iconbox .icon-bg #twitter_icon, .iconbox .icon-bg #mai_icon {
       padding-top: 5px; }
+
+.contact__mailbox {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+  .contact__mailbox img {
+    width: 24px;
+    height: auto; }
+  .contact__mailbox__address {
+    letter-spacing: 1px;
+    color: #515151; }
+.contact .contact__icon-bg {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 11px 10px;
+  text-align: center;
+  -moz-box-shadow: 1px 3px 6px 1px #E3E3E3;
+  -webkit-box-shadow: 1px 3px 6px 1px #E3E3E3;
+  box-shadow: 1px 3px 6px 1px #E3E3E3;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  border-radius: 22px; }
 
 .footer {
   width: 100%;

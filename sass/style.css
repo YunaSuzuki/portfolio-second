@@ -1,0 +1,53 @@
+/*
+Error: Invalid CSS after "  .": expected "{", was "}"
+        on line 382 of /home/ec2-user/environment/portfolio2/sass/style.scss
+
+377:     }
+378:   }
+379:   
+380:   .
+381:     
+382: }
+383: 
+384: //footer
+385: .footer{
+386:   width: 100%;
+387:   height: 100px;
+
+Backtrace:
+/home/ec2-user/environment/portfolio2/sass/style.scss:382
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/bin/scss:13:in `<top (required)>'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/scss:23:in `load'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/scss:23:in `<main>'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `eval'
+/home/ec2-user/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  .\": expected \"{\", was \"}\"\A         on line 382 of /home/ec2-user/environment/portfolio2/sass/style.scss\A \A 377:     }\A 378:   }\A 379:   \A 380:   .\A 381:     \A 382: }\A 383: \A 384: //footer\A 385: .footer{\A 386:   width: 100%;\A 387:   height: 100px;"; }

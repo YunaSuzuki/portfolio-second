@@ -15,6 +15,20 @@ ul{
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+  color: $text-color;
+}
+
+.marker{
+  background: linear-gradient(transparent 60%, #c1e0ff 60%);
+  font-weight: bold;
+}
+
+.link-hover:hover{
+  text-decoration: underline;
+}
+
 //header
 .header{
   position: relative;
@@ -143,6 +157,7 @@ ul{
   }
   
   &__textbox{
+    color: $text-color;
     font-family: $contents-font;
     
     &__row{
@@ -180,6 +195,7 @@ ul{
 
 .skill__block{
   text-align: center;
+  color: $text-color;
   @include box-shadow(1px 3px 6px 1px #E3E3E3);
   @include border-radius(5px);
   font-family: $contents-font;
@@ -232,15 +248,15 @@ ul{
   }
 }
 .works__block{
-  margin-bottom: 56px;
   
   @media #{$sp-size}{
     width: 60%;
-    margin: auto;
+    margin: 40px auto;
   }
 
   @media #{$more-than-tb}{
     width: 30%;
+    margin-bottom: 56px;
   }
   
   &__image{
@@ -280,6 +296,7 @@ ul{
   &__textbox{
     font-family: $contents-font;
     text-align: center;
+    color: $text-color;
     
     &__upper{
       margin-bottom: 8px;
@@ -291,7 +308,7 @@ ul{
   }
 }
 
-//contact
+//sns
 .iconbox{
   display: flex;
   margin: auto;
@@ -337,6 +354,35 @@ ul{
       padding-top: 5px;
     }
   }
+}
+
+//contact
+.contact{
+  &__mailbox{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    img{
+      width: 24px;
+      height: auto;
+    }
+    
+    &__address{
+      letter-spacing: 1px;
+      color: $text-color;
+    }
+  }
+    
+  .contact__icon-bg{
+    display: inline-block;
+    margin-right: 8px;
+    padding:  11px 10px;
+    text-align: center;
+    @include box-shadow(1px 3px 6px 1px #E3E3E3);
+    @include border-radius(22px);
+  }
+    
 }
 
 //footer

@@ -288,8 +288,13 @@
   display: flex;
   margin: auto;
   
+  li:hover{
+    background-color: #f7f7f7;
+  }
+  
   @media #{$sp-size}{
-    width: 70%;
+    width: 90%;
+    max-width: 260px;
     
     justify-content: space-between;
   }
@@ -337,6 +342,12 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    
+    &:hover{
+      .contact__icon-bg{
+        background-color: #f7f7f7;
+      }
+    }
 
     img{
       width: 24px;

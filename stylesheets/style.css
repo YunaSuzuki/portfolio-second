@@ -13,10 +13,6 @@ a {
   text-decoration: none;
   color: #515151; }
 
-.marker {
-  background: linear-gradient(rgba(0, 0, 0, 0) 60%, #c1e0ff 60%);
-  font-weight: bold; }
-
 .bold-text {
   font-weight: bold; }
 
@@ -244,9 +240,12 @@ a {
 .iconbox {
   display: flex;
   margin: auto; }
+  .iconbox li:hover {
+    background-color: #f7f7f7; }
   @media (max-width: 560px) {
     .iconbox {
-      width: 70%;
+      width: 90%;
+      max-width: 260px;
       justify-content: space-between; } }
   @media (min-width: 561px) {
     .iconbox {
@@ -285,6 +284,8 @@ a {
   width: 80%;
   margin: 0 auto;
   text-align: center; }
+  .contact__mailbox:hover .contact__icon-bg {
+    background-color: #f7f7f7; }
   .contact__mailbox img {
     width: 24px;
     height: auto; }

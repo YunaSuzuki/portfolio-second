@@ -1,33 +1,8 @@
 @import 'compass';
 @import 'modules/variables.scss';
 @import 'modules/mixin.scss';
+@import 'modules/common.scss';
 
-*{
-  box-sizing: border-box;
-}
-
-p{
-  margin: 0;
-}
-
-ul{
-  list-style: none;
-  padding: 0;
-}
-
-a{
-  text-decoration: none;
-  color: $text-color;
-}
-
-.marker{
-  background: linear-gradient(transparent 60%, #c1e0ff 60%);
-  font-weight: bold;
-}
-
-.link-hover:hover{
-  text-decoration: underline;
-}
 
 //header
 .header{

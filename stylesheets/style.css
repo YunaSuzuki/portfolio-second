@@ -17,6 +17,9 @@ a {
   background: linear-gradient(rgba(0, 0, 0, 0) 60%, #c1e0ff 60%);
   font-weight: bold; }
 
+.bold-text {
+  font-weight: bold; }
+
 .link-hover:hover {
   text-decoration: underline; }
 

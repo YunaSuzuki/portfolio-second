@@ -13,6 +13,9 @@ a {
   text-decoration: none;
   color: #515151; }
 
+.marker {
+  background: linear-gradient(rgba(0, 0, 0, 0) 60%, #fca1a1 60%); }
+
 .bold-text {
   font-weight: bold; }
 
@@ -128,11 +131,13 @@ a {
 .profile__textbox {
   color: #515151;
   font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif; }
-  .profile__textbox__row {
-    line-height: 25px; }
   @media (max-width: 560px) {
     .profile__textbox {
+      margin: 0 auto;
+      width: 70%;
       text-align: center; } }
+  .profile__textbox__row {
+    line-height: 25px; }
 
 .question-icon {
   position: absolute;
@@ -167,7 +172,7 @@ a {
     .skill__block {
       width: 100%;
       max-width: 400px;
-      height: 300px;
+      height: 350px;
       margin: 0 auto 32px;
       padding: 32px 16px; } }
   @media (min-width: 800px) {

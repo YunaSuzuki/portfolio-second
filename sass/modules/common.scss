@@ -27,3 +27,32 @@ a{
 .link-hover:hover{
   text-decoration: underline;
 }
+
+.underline{
+  text-decoration: underline;
+}
+
+
+//pc-size animationなど
+@media #{$pc-size}{
+  
+  //worksにhoverでmask
+  .masks:hover{
+    @include opacity(.5);
+  }
+  
+  //sns-icon rotate
+   .iconbox li{
+     transform: rotate(360deg);
+     
+     &:hover{
+       animation: rotate 0.4s linear;
+     }
+   }
+   
+   @keyframes rotate{
+    0% { transform: rotate(0deg);}
+    50% { transform: rotate(180deg);}
+    100%{ transform: rotate(360deg);}
+  }
+}

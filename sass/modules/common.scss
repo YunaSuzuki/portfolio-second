@@ -56,3 +56,17 @@ a{
     100%{ transform: rotate(360deg);}
   }
 }
+
+//skill-block fadein(sp)
+@media #{$sp-size}{
+  .fadein {
+    opacity: 0;
+    transform : translate(0, 100px);
+    transition : all 1500ms;
+  }
+  
+  .fadein.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

@@ -218,82 +218,107 @@
 
 //works
 .works-wrapper{
-  @media #{$more-than-tb}{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  // @media #{$more-than-tb}{
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
     
-    &:after{
-      content: '';
-      display: block;
-      width: 30%;
-    }
-  }
+  //   &:after{
+  //     content: '';
+  //     display: block;
+  //     width: 30%;
+  //   }
+  // }
 }
 .works__block{
   
-  @media #{$sp-size}{
-    width: 60%;
-    margin: 40px auto;
-  }
-
-  @media #{$more-than-tb}{
-    width: 30%;
-    margin: 0 8px 56px;
+  &__textbox{
+    &__lower li{
+      list-style-type: disc;
+      list-style: inside;
+    }
   }
   
-  &__image{
+  @media #{$sp-size}{
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    height: 350px;
-    margin-bottom: 24px;
+    width: 85%;
+    height: 200px;
+    margin: 16px auto 24px;
     
-    .site-link{
+    &__image{
       position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+      img{
+        width: 100%;
+      }
+    }
+    
+    &__textbox{
+      position: absolute;
+      width: 70%;
+      height: 50%;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+      z-index: 3;
+      margin: auto;
+      font-family: $mask-font;
+      
+      p, ul{
+        color: #fff;
+        text-align: center;
+      }
+      
+      &__lower li{
+        margin: 4px 0;
+        @include fontsize(12);
+      }
     }
   }
-  
-  #corporate-site__bg{
-    background-image: url('../images/corporate-site.png');
-  }
-  
-  #smacam__bg{
-    background-image: url('../images/smacam.png');
-  }
-  
-  #weblog__bg{
-    background-image: url('../images/weblog.png');
-  }
-  
-  #animal__bg{
-    border: 1px solid #eee;
-    background-image: url('../images/animal-app.png');
-  }
-  
-  #webrary__bg{
-    border: 1px solid #eee;
-    background-image: url('../images/webrary.png');
-  }
-  
-  &__textbox{
-    font-family: $contents-font;
-    text-align: center;
-    color: $text-color;
+
+  @media #{$more-than-tb}{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin: 24px auto;
     
-    &__upper{
-      margin-bottom: 8px;
+    &__image{
+      width: 35%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-align: right;
+      img{
+        width: 100%;
+      }
     }
     
-    &__lower{
-      @include fontsize(12);
+    &__textbox{
+      width: 65%;
+      padding-left: 24px;
+      color: $text-color;
+      font-family: $contents-font;
+      
+      &__lower li{
+        margin: 8px 0;
+        @include fontsize(14);
+      }
     }
   }
+}
+
+.masks{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #707070;
+  opacity: 0.7;
+  z-index: 2;
 }
 
 //sns

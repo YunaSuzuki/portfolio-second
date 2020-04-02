@@ -70,3 +70,9 @@ a{
     transform: translate(0, 0);
   }
 }
+
+@media #{$more-than-tb}{
+  .sp-view{
+    display: none;
+  }
+}

@@ -220,8 +220,14 @@
 .works-wrapper{
   @media #{$more-than-tb}{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
+    &:after{
+      content: '';
+      display: block;
+      width: 30%;
+    }
   }
 }
 .works__block{
@@ -233,7 +239,7 @@
 
   @media #{$more-than-tb}{
     width: 30%;
-    margin-bottom: 56px;
+    margin: 0 8px 56px;
   }
   
   &__image{
@@ -270,6 +276,11 @@
     background-image: url('../images/animal-app.png');
   }
   
+  #webrary__bg{
+    border: 1px solid #eee;
+    background-image: url('../images/webrary.png');
+  }
+  
   &__textbox{
     font-family: $contents-font;
     text-align: center;
@@ -289,11 +300,7 @@
 .iconbox{
   display: flex;
   margin: auto;
-  
-  li:hover{
-    background-color: #f7f7f7;
-  }
-  
+
   @media #{$sp-size}{
     width: 90%;
     max-width: 260px;

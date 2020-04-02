@@ -241,10 +241,10 @@ a {
       position: absolute;
       top: 0;
       right: 0;
-      left: 0;
-      z-index: 1; }
+      left: 0; }
       .works__block__image img {
-        width: 100%; }
+        width: 100%;
+        z-index: 1; }
     .works__block__textbox {
       position: absolute;
       width: 70%;
@@ -256,9 +256,11 @@ a {
       z-index: 3;
       margin: auto;
       font-family: "TsukuARdGothic-Regular", "MS UI Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif; }
-      .works__block__textbox p, .works__block__textbox ul {
+      .works__block__textbox p, .works__block__textbox ul, .works__block__textbox a {
         color: #fff;
         text-align: center; }
+      .works__block__textbox__upper {
+        text-decoration: underline; }
       .works__block__textbox__lower li {
         margin: 4px 0;
         font-size: 12px;
@@ -270,12 +272,16 @@ a {
     height: 200px;
     margin: 24px auto; }
     .works__block__image {
-      width: 35%;
-      background-repeat: no-repeat;
-      background-size: contain;
-      text-align: right; }
+      position: relative;
+      width: 35%; }
       .works__block__image img {
         width: 100%; }
+      .works__block__image a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
     .works__block__textbox {
       width: 65%;
       padding-left: 24px;

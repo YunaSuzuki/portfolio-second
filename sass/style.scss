@@ -250,9 +250,10 @@
       top: 0;
       right: 0;
       left: 0;
-      z-index: 1;
+      
       img{
         width: 100%;
+        z-index: 1;
       }
     }
     
@@ -268,9 +269,14 @@
       margin: auto;
       font-family: $mask-font;
       
-      p, ul{
+      
+      p, ul, a{
         color: #fff;
         text-align: center;
+      }
+      
+      &__upper{
+        text-decoration: underline;
       }
       
       &__lower li{
@@ -287,12 +293,19 @@
     margin: 24px auto;
     
     &__image{
+      position: relative;
       width: 35%;
-      background-repeat: no-repeat;
-      background-size: contain;
-      text-align: right;
+      
       img{
         width: 100%;
+      }
+      
+      a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
     }
     

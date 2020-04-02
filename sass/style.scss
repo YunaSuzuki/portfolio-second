@@ -38,6 +38,7 @@
     
     @media #{$more-than-tb}{
       width: 40%;
+      min-width: 400px;
       padding: 16px 40px;
     }
   }
@@ -447,6 +448,7 @@
   line-height: 25px;
   color: #948C76;
   background-color: #F9F8F5;
+  z-index: 1;
   @include border-radius(5px);
   @include fontsize(14);
   

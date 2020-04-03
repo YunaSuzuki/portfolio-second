@@ -252,13 +252,15 @@
     color: #fff;
     
     &__image{
+      height: 100%;
       position: absolute;
       top: 0;
       right: 0;
       left: 0;
+      overflow: hidden;
       
       img{
-        width: 100%;
+        height: 100%;
         z-index: 1;
       }
     }
@@ -266,7 +268,7 @@
     &__textbox{
       position: absolute;
       width: 85%;
-      height: 50%;
+      height: 60%;
       top: 0;
       right: 0;
       bottom: 0;

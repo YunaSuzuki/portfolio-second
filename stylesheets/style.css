@@ -239,7 +239,8 @@ a {
     position: relative;
     width: 85%;
     height: 200px;
-    margin: 16px auto 24px; }
+    margin: 16px auto 24px;
+    color: #fff; }
     .works__block__image {
       position: absolute;
       top: 0;
@@ -250,7 +251,7 @@ a {
         z-index: 1; }
     .works__block__textbox {
       position: absolute;
-      width: 70%;
+      width: 85%;
       height: 50%;
       top: 0;
       right: 0;
@@ -268,7 +269,24 @@ a {
         margin: 4px 0;
         text-align: left;
         font-size: 12px;
-        font-size: 0.75rem; } }
+        font-size: 0.75rem; }
+    .works__block__textbox__inner {
+      position: relative;
+      height: 100%; }
+      .works__block__textbox__inner .tagbox {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        font-size: 12px;
+        font-size: 0.75rem; }
+      .works__block__textbox__inner .tagbox__tag {
+        display: inline-block;
+        margin: 8px 4px 0 0;
+        padding: 4px 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px; } }
 @media (min-width: 561px) {
   .works__block {
     display: flex;
@@ -294,7 +312,18 @@ a {
       .works__block__textbox__lower li {
         margin: 8px 0;
         font-size: 14px;
-        font-size: 0.875rem; } }
+        font-size: 0.875rem; }
+    .works__block .tagbox {
+      margin-top: 24px;
+      font-size: 12px;
+      font-size: 0.75rem; }
+    .works__block .tagbox__tag {
+      margin-right: 4px;
+      padding: 4px 8px;
+      background-color: #eaeaea;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px; } }
 
 .masks {
   position: absolute;

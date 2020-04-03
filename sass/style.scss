@@ -249,6 +249,7 @@
     width: 85%;
     height: 200px;
     margin: 16px auto 24px;
+    color: #fff;
     
     &__image{
       position: absolute;
@@ -264,7 +265,7 @@
     
     &__textbox{
       position: absolute;
-      width: 70%;
+      width: 85%;
       height: 50%;
       top: 0;
       right: 0;
@@ -288,6 +289,26 @@
         margin: 4px 0;
         text-align: left;
         @include fontsize(12);
+      }
+    }
+    
+    &__textbox__inner{
+      position: relative;
+      height: 100%;
+      
+      .tagbox{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        @include fontsize(12);
+      }
+      
+      .tagbox__tag{
+        display: inline-block;
+        margin: 8px 4px 0 0;
+        padding: 4px 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+        @include border-radius(10px);
       }
     }
   }
@@ -325,6 +346,18 @@
         margin: 8px 0;
         @include fontsize(14);
       }
+    }
+    
+    .tagbox{
+      margin-top: 24px;
+      @include fontsize(12);
+    }
+    
+    .tagbox__tag{
+      margin-right: 4px;
+      padding: 4px 8px;
+      background-color: #eaeaea;
+      @include border-radius(10px);
     }
   }
 }

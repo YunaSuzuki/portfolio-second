@@ -234,6 +234,10 @@
 .works__block{
   
   &__textbox{
+    &__upper{
+      font-weight: bold;
+    }
+    
     &__lower li{
       list-style-type: disc;
       list-style: inside;
@@ -282,6 +286,7 @@
       
       &__lower li{
         margin: 4px 0;
+        text-align: left;
         @include fontsize(12);
       }
     }
@@ -460,4 +465,8 @@
       width: 50%;
     }
   }
+}
+
+.empty-star{
+  color: #dddddd;
 }

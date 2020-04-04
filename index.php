@@ -10,6 +10,7 @@
     <link rel="icon" href="images/favicon.png" sizes="48x48" type="image/png" /> 
     <link rel="icon" href="images/favicon.png" sizes="62x62" type="image/png" />
     <!--stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/normalize.css"/>
     <link rel="stylesheet" href="stylesheets/style.css"/>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -363,15 +364,36 @@
           <li class="icon-bg"><a href="https://kamekame-walking.hatenablog.com"><img src="images/pen.png" alt="blog"></a></li>
         </ul>
       </section>
-      <!--<section class="section contact">-->
-      <!--  <p class="section__title">Contact</p>-->
-      <!--  <div class="contact__mailbox link-hover">-->
-      <!--    <a href="mailto:i_am_yuna@outlook.com">-->
-      <!--      <div class="contact__icon-bg"><img src="images/mail.png" alt="mail" class="contact__mailbox__icon"></div>-->
-      <!--      <span class="contact__mailbox__address">i_am_yuna@outlook.com</span>-->
-      <!--    </a>-->
-      <!--  </div>-->
-      <!--</section>-->
+      <section class="section contact">
+        <p class="section__title">Contact</p>
+        <div class="contact-wrapper">
+          <form method="POST">
+            <div class="row form-group">
+              <label for="name" class="col-sm-3 col-form-label">お名前</label>
+              <div class="col-sm-9">
+                <input type="text" name="name" class="form-control" required/>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="mail" class="col-sm-3 col-form-label">メールアドレス</label>
+              <div class="col-sm-9">
+                <input type="text" name="mail" class="form-control" required/>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="message" class="col-sm-3 col-form-label">お問い合せ内容</label>
+              <div class="col-sm-9">
+                <textarea name="message" class="form-control" rows="8" required/></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mx-auto col-sm-4 ">
+                  <button type="submit" class="btn btn-primary btn-block">Submit.. </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <span class="footer__text">All rights reserved.</span>

@@ -505,3 +505,16 @@
 .empty-star{
   color: #dddddd;
 }
+
+//contact
+form{
+  box-sizing: border-box;
+  color: #515151;
+  
+  @media (min-width: 576px){
+    label{
+      text-align: right;
+    }
+  }
+}
+

@@ -442,4 +442,11 @@ a {
 .empty-star {
   color: #dddddd; }
 
+form {
+  box-sizing: border-box;
+  color: #515151; }
+  @media (min-width: 576px) {
+    form label {
+      text-align: right; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -449,4 +449,12 @@ form {
     form label {
       text-align: right; } }
 
+.alert {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  right: 0;
+  left: 0;
+  margin: auto; }
+
 /*# sourceMappingURL=style.css.map */

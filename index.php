@@ -1,46 +1,43 @@
 <?php
   mb_language("Japanese");
   mb_internal_encoding("UTF-8");
-
-  if (array_key_exists('name', $_POST)) {
-      $name = $_POST['name'];
+  
+  if($_SERVER['REQUEST_METHOD'] != 'POST'){
+    $name = "";
+    $email = "";
+    $message = "";
   } else{
-       $name = "";
-  }
-
-  if (array_key_exists('email', $_POST)) {
-      $email = $_POST['email'];
-  } else{
-       $email = "";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
   }
   
-  if (array_key_exists('message', $_POST)) {
-      $message = $_POST['message'];
-  } else{
-       $message = "";
-  }
-
-  $content = "";
-  $content .= 'コンタクトフォームよりお問い合せがありました\n\n';
-  $content .= '【お名前】\n';
-  $content .= $name.'\n\n';
-  $content .= '【メールアドレス】\n';
-  $content .= $email.'\n\n';
-  $content .= '【お問い合せ内容】\n';
-  $content .= $message.'\n\n';
-  
-  $header = "MIME-Version: 1.0\n";
-	$header .= "From:".$email;
-	$header .= "Reply-To: GRAYCODE <noreply@sample.jp>\n";
-  
-  $email_to = "i_am_yuna@outlook.com";
-  $email_subject = 'コンタクトフォームよりお問い合せがありました。';
-  $email_body = $content;
-  
-  if (mb_send_mail($email_to, $email_subject, $email_body, $header))
-  {
-  } else {
-  echo "メールの送信に失敗しました。";
+  if(($name != "") && ($email != "") && ($message != "")){
+    $header = "MIME-Version: 1.0\n";
+  	$header .= "From: {$email}";
+  	$header .= "Reply-To: GRAYCODE <noreply@sample.jp>\n";
+  	
+  	$content = "";
+    $content .= 'コンタクトフォームよりお問い合せがありました\n\n';
+    $content .= '【お名前】\n';
+    $content .= $name.'\n\n';
+    $content .= '【メールアドレス】\n';
+    $content .= $email.'\n\n';
+    $content .= '【お問い合せ内容】\n';
+    $content .= $message.'\n\n';
+    
+    $email_to = "i_am_yuna@outlook.com";
+    $email_subject = 'コンタクトフォームよりお問い合せがありました。';
+    $email_body = $content;
+    
+    $alert_message = '<script type="text/javascript">alert("お問い合せありがとうございました。");</script>';
+    
+    if(mb_send_mail($email_to, $email_subject, $email_body, $header)){
+      echo $alert_message;
+      $name = '';
+      $email = '';
+      $message = '';
+    }
   }
 ?>
 <!DOCTYPE html>
@@ -359,7 +356,7 @@
               </div>
             </div>
           </div>
-          <div class="works__block alert">
+          <div class="works__block">
             <div class="works__block__image" id="animal__bg">
               <img src="images/circle-petit.png" alt="image">
               <div class="masks sp-view"></div>

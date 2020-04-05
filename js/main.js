@@ -6,8 +6,8 @@ $('.question-icon').on('click', function(){
 });
 
 
-//準備中アラート
-$('.alert').on('click', function(){
+//準備中
+$('.prepare').on('click', function(){
   alert('準備中です。');
 });
 

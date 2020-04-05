@@ -1,3 +1,37 @@
+<?php
+  mb_language("Japanese");
+  mb_internal_encoding("UTF-8");
+
+  if (array_key_exists('name', $_POST)) {
+      $name = $_POST['name'];
+  } else{
+       $name = "";
+  }
+
+  if (array_key_exists('email', $_POST)) {
+      $email = $_POST['email'];
+  } else{
+       $email = "";
+  }
+  
+  if (array_key_exists('message', $_POST)) {
+      $message = $_POST['message'];
+  } else{
+       $message = "";
+  }
+
+  
+  $to = "yuna.com.jp@outlook.jp";
+  $title = $name;
+  $content = $message;
+  $pfrom   = "-f $to";
+  
+  if (mb_send_mail($to, $title, $content, "From: from@example.com"))
+  {
+  } else {
+  echo "メールの送信に失敗しました。";
+  }
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -367,28 +401,28 @@
       <section class="section contact">
         <p class="section__title">Contact</p>
         <div class="contact-wrapper">
-          <form method="POST">
+          <form action="index.php" method="POST">
             <div class="row form-group">
-              <label for="name" class="col-sm-3 col-form-label">お名前</label>
+              <label for="name" class="col-sm-3 col-form-label">お名前*</label>
               <div class="col-sm-9">
                 <input type="text" name="name" class="form-control" required/>
               </div>
             </div>
             <div class="row form-group">
-              <label for="mail" class="col-sm-3 col-form-label">メールアドレス</label>
+              <label for="email" class="col-sm-3 col-form-label">メールアドレス*</label>
               <div class="col-sm-9">
-                <input type="text" name="mail" class="form-control" required/>
+                <input type="text" name="email" class="form-control" required/>
               </div>
             </div>
             <div class="row form-group">
-              <label for="message" class="col-sm-3 col-form-label">お問い合せ内容</label>
+              <label for="message" class="col-sm-3 col-form-label">お問い合せ内容*</label>
               <div class="col-sm-9">
                 <textarea name="message" class="form-control" rows="8" required/></textarea>
               </div>
             </div>
             <div class="row">
               <div class="mx-auto col-sm-4 ">
-                  <button type="submit" class="btn btn-primary btn-block">Submit.. </button>
+                  <input type="submit" value="Submit" class="btn btn-primary btn-block" />
               </div>
             </div>
           </form>

@@ -20,13 +20,24 @@
        $message = "";
   }
 
+  $content = "";
+  $content .= 'コンタクトフォームよりお問い合せがありました\n\n';
+  $content .= '【お名前】\n';
+  $content .= $name.'\n\n';
+  $content .= '【メールアドレス】\n';
+  $content .= $email.'\n\n';
+  $content .= '【お問い合せ内容】\n';
+  $content .= $message.'\n\n';
   
-  $to = "yuna.com.jp@outlook.jp";
-  $title = $name;
-  $content = $message;
-  $pfrom   = "-f $to";
+  $header = "MIME-Version: 1.0\n";
+	$header .= "From:".$email;
+	$header .= "Reply-To: GRAYCODE <noreply@sample.jp>\n";
   
-  if (mb_send_mail($to, $title, $content, "From: from@example.com"))
+  $email_to = "i_am_yuna@outlook.com";
+  $email_subject = 'コンタクトフォームよりお問い合せがありました。';
+  $email_body = $content;
+  
+  if (mb_send_mail($email_to, $email_subject, $email_body, $header))
   {
   } else {
   echo "メールの送信に失敗しました。";
@@ -401,7 +412,7 @@
       <section class="section contact">
         <p class="section__title">Contact</p>
         <div class="contact-wrapper">
-          <form action="index.php" method="POST">
+          <form action="/" method="POST">
             <div class="row form-group">
               <label for="name" class="col-sm-3 col-form-label">お名前*</label>
               <div class="col-sm-9">

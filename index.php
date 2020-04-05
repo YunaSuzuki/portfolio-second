@@ -14,7 +14,7 @@
   
   if(($name != "") && ($email != "") && ($message != "")){
     $header = "MIME-Version: 1.0\n";
-  	$header .= "From: {$email}";
+  	$header .= "From: " .mb_encode_mimeheader($name) ."<" .$email .">";
   	$header .= "Reply-To: GRAYCODE <noreply@sample.jp>\n";
   	
   	$content = "";

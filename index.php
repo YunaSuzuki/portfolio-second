@@ -411,21 +411,21 @@
         <div class="contact-wrapper">
           <form action="/" method="POST">
             <div class="row form-group">
-              <label for="name" class="col-sm-3 col-form-label">お名前*</label>
+              <label for="input-name" class="col-sm-3 col-form-label">お名前*</label>
               <div class="col-sm-9">
-                <input type="text" name="name" class="form-control" required/>
+                <input type="text" name="name" class="form-control" id="input-name" required >
               </div>
             </div>
             <div class="row form-group">
-              <label for="email" class="col-sm-3 col-form-label">メールアドレス*</label>
+              <label for="input-email" class="col-sm-3 col-form-label">メールアドレス*</label>
               <div class="col-sm-9">
-                <input type="text" name="email" class="form-control" required/>
+                <input type="text" name="email" class="form-control" id="input-email" required >
               </div>
             </div>
             <div class="row form-group">
-              <label for="message" class="col-sm-3 col-form-label">お問い合せ内容*</label>
+              <label for="input-message" class="col-sm-3 col-form-label">お問い合せ内容*</label>
               <div class="col-sm-9">
-                <textarea name="message" class="form-control" rows="8" required/></textarea>
+                <textarea name="message" class="form-control" rows="8" id="input-message" required ></textarea>
               </div>
             </div>
             <div class="row">

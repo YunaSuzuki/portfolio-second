@@ -70,14 +70,17 @@
           <div class="profile__imagebox flex-box__left"></div>
           <div class="profile__textbox flex-box__right">
             <p class="profile__textbox__row">
-              東京都在住、25歳。オリジナルサービスを開発するため、毎日デザイン・プログラミングを勉強中！オンラインスクールにて、プログラミング・デザインを学びました。
+              東京都在住、25歳。オリジナルサービスを開発するため、毎日デザイン・プログラミングを勉強中！
+            </p>
+            <p>
+              オンラインスクールにて、プログラミング・デザインを学びました。
             </p>
             <p class="profile__textbox__row">
-              教えることが大好きなので、プログラミング × 教育にも携わっていきたいです！
+              教えることが好きなので、プログラミング × 教育にも携わっていきたいです！
             </p>
-            <p class="profile__textbox__row">
-              <span class="bold-text marker">(初心者向けブログ更新中)</span>
-            </p>
+            <!--<p class="profile__textbox__row">-->
+            <!--  <span class="bold-text marker">(初心者向けブログ更新中)</span>-->
+            <!--</p>-->
           </div>
         </div>
       </section>
@@ -411,21 +414,18 @@
         <div class="contact-wrapper">
           <form action="/" method="POST">
             <div class="row form-group">
-              <label for="input-name" class="col-sm-3 col-form-label">お名前*</label>
-              <div class="col-sm-9">
-                <input type="text" name="name" class="form-control" id="input-name" required >
+              <div class="col-sm-9 mx-auto">
+                <input type="text" name="name" class="form-control" id="input-name" placeholder="Name" required >
               </div>
             </div>
             <div class="row form-group">
-              <label for="input-email" class="col-sm-3 col-form-label">メールアドレス*</label>
-              <div class="col-sm-9">
-                <input type="text" name="email" class="form-control" id="input-email" required >
+              <div class="col-sm-9 mx-auto">
+                <input type="text" name="email" class="form-control" id="input-email" placeholder="Email" required >
               </div>
             </div>
             <div class="row form-group">
-              <label for="input-message" class="col-sm-3 col-form-label">お問い合せ内容*</label>
-              <div class="col-sm-9">
-                <textarea name="message" class="form-control" rows="8" id="input-message" required ></textarea>
+              <div class="col-sm-9 mx-auto">
+                <textarea name="message" class="form-control" rows="8" id="input-message" placeholder="Msessage" required ></textarea>
               </div>
             </div>
             <div class="row">

@@ -361,6 +361,7 @@
           </div>
           <div class="works__block">
             <div class="works__block__image" id="animal__bg">
+              <a href="https://circle-petit.iamyuna.work" class="site-link"></a>
               <img src="images/circle-petit.png" alt="image">
               <div class="masks sp-view"></div>
             </div>

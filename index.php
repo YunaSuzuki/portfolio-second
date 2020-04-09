@@ -72,12 +72,18 @@
             <p class="profile__textbox__row">
               東京都在住、25歳。オリジナルサービスを開発するため、毎日デザイン・プログラミングを勉強中！
             </p>
-            <p>
+            <p class="profile__textbox__row">
               オンラインスクールにて、プログラミング・デザインを学びました。
             </p>
             <p class="profile__textbox__row">
               教えることが好きなので、プログラミング × 教育にも携わっていきたいです！
             </p>
+            <ul class="profile__textbox__row profile__textbox__list">【今後の展望】
+              <li>プログラミング教育に携わりたい</li>
+              <li>Ruby on Rails/PHP・Larabelを使用したオリジナルサービス開発(進行中)</li>
+              <li>Swiftを使用したiPhoneアプリの開発</li>
+              <li>WordPressにて初心者向け情報発信</li>
+            </ul>
             <!--<p class="profile__textbox__row">-->
             <!--  <span class="bold-text marker">(初心者向けブログ更新中)</span>-->
             <!--</p>-->

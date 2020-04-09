@@ -7,7 +7,8 @@ p {
 
 ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 a {
   text-decoration: none;
@@ -171,6 +172,8 @@ a {
       text-align: center; } }
   .profile__textbox__row {
     line-height: 25px; }
+  .profile__textbox__list {
+    margin: 16px 0; }
 
 .question-icon {
   position: absolute;

@@ -270,7 +270,7 @@
   @include border-radius(5px);
   
   @media #{$tb-size}{
-    padding: 8px;
+    padding: 12px 8px;
   }
   
   @media #{$sp-size}{
@@ -348,7 +348,7 @@
       left: 0;
       z-index: 3;
       margin: auto;
-      font-family: $mask_font;
+      font-family: $main-font;
       
       
       p, ul, a{
@@ -415,7 +415,7 @@
       width: 65%;
       padding-left: 24px;
       color: $text-color;
-      font-family: $mask_font;
+      font-family: $main-font;
       
       &__lower li{
         margin: 8px 0;

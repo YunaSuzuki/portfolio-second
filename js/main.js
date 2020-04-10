@@ -36,8 +36,6 @@ $('.works__block__textbox__upper').on({
 });
 
 
-
-
 //sp-view skill fadein
 $(window).scroll(function (){
   $('.fadein').each(function(){
@@ -49,3 +47,18 @@ $(window).scroll(function (){
       }
   });
 });
+
+//bubble animation
+$(function (){
+  setTimeout('rect()');
+});
+
+function rect(){
+  $('.bubble').animate({
+    'margin-top' : '-=8px'
+  }, 700).animate({
+    'margin-top' : '+=8px'
+  }, 700);
+  setTimeout('rect()', 1400);
+}
+

@@ -303,6 +303,12 @@
         </div>
       </section>
       <section class="section works">
+        <div class="bubble-wrapper">
+          <div class="bubble">
+            <span class="bubble__text">日々、ブラッシュアップ中！</span>
+            <div class="arrow"></div>
+          </div>
+        </div>
         <p class="section__title">Works</p>
         <div class="works-wrapper">
           <div class="works__block">
